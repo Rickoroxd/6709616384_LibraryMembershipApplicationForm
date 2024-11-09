@@ -7,49 +7,52 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div>
+    <div class="container">
         <form>
-            <fieldset>
-                <label>ชื่อ-สกุล</label>
-                <input type="text">
-                <label>Name:</label>
-                <input type="text">
-            </fieldset>
+            <div class="item1">
             
-            <fieldset>
-                <label>เพศ</label>
-                <input type="radio" name="gender">Male</input>
-                <input type="radio" name="gender">Female</input>
-                <input type="radio" name="gender">อิ่นๆ</input>
-                <labeส>เลขนักศึกษา</labeส>
-                <input type="tel" id="quantity" name="student pass">
-            </fieldset>
-            <fieldset>
-                <label>คณะที่ศึกษาอยู่</label>
-                <input type="text">
-                <label>Email</label>
-                <input type="email">
-                <label>วัน/เดือน/ปี ที่เกิด</label>
+                <label>ชื่อ-สกุล:</label>
+                <input type="text" name="fname-surname-th">
+                <label>Name:</label>
+                <input type="text" name="fname-surname-eng">
                 <br>
-                <a>ประเภทหนังสือที่สนใจ</a>
-                <input type="radio" name="book">
-                <label>เรียน</label>
-                <input type="radio" name="book">
-                <label>เกม</label>
-                <input type="radio" name="book">
-                <label>มังงะ</label>
-          
-            </fieldset>
-            <fieldset>
-                <a>ความต้องการรับข่าวสารข้อมูลของห้องสมุดทางอีเมลหรือไม่</a>
-                <label>YES</label>
-                <input type="radio" name="noti">
-                <label>NO</label>
-                <input type="radio" name="noti">
-            </fieldset>
-            <input type="submit">
+                <label>Gender:</label>
+                <input type="radio" name="gender">
+                <label>Male</label>
+                <input type="radio" name="gender">
+                <label>Female</label>
+                <input type="radio" name="gender">
+                <label>etc.</label>
+            </div>
+            <div class="item2">
+                <label>รหัสนักศึกษา:</label>
+                <input type="tel" name="student-pass" required maxlength="10">
+                <label>คณะที่ศึกษา</label>
+                <input type="text" name="be" required>
+            </div>
+            <div class="item3">
+                <label>Email:</label>
+                <input type="email" required>
+                <label>Birth Day:</label>
+                <input type="date" required>
+
+            </div>
+            <div class="item4">
+                <label>ประเภทของหนังสือที่สนใจ</label>
+                <select> 
+                    <option>Horor</option>
+                    <option>Manga</option>
+                    <option>Business</option>
+                    <option>Game</option>
+                </select>
+            </div>
+            <div class="item5">
+                <label>ต้องการรับข่าวสารข้อมูลของห้องสมุดทางอีเมลหรือไม่</label>
+                <input type="radio" name="noti">YES
+                <input type="radio" name="noti">NO
+            </div>
         </form>
     </div>
-    
+       
 </body>
 </html>
