@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form method="post">
+    <form>
         <fieldset>
             <label>ชื่อ-สกุล</label>
             <input type="text">
@@ -26,7 +26,27 @@
         <fieldset>
             <label>คณะที่ศึกษาอยู่</label>
             <input type="text">
+            <label>Email</label>
+            <input type="email">
+            <label>วัน/เดือน/ปี ที่เกิด</label>
+            <br>
+            <a>ประเภทหนังสือที่สนใจ</a>
+            <input type="radio" name="book">
+            <label>เรียน</label>
+            <input type="radio" name="book">
+            <label>เกม</label>
+            <input type="radio" name="book">
+            <label>มังงะ</label>
+      
         </fieldset>
+        <fieldset>
+            <a>ความต้องการรับข่าวสารข้อมูลของห้องสมุดทางอีเมลหรือไม่</a>
+            <label>YES</label>
+            <input type="radio" name="noti">
+            <label>NO</label>
+            <input type="radio" name="noti">
+        </fieldset>
+        <input type="submit">
     </form>
 </body>
 </html>
